@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calculateTip() {
-        val stringInTextView = binding.costOfService.text.toString()
+        val stringInTextView = binding.costOfServiceEditText.text.toString()
         val cost = stringInTextView.toDoubleOrNull()
         if (cost == null) {
             displayTip(0.0)
